@@ -27,6 +27,14 @@ minecraft {
 }
 
 dependencies {
+    
+    compile fileTree(dir: 'library', include: ['*.jar'])
+    compile files("library")
+    sourceCompatibility = 1.7
+    targetCompatibility = 1.7
+    compileJava.options.encoding = 'UTF-8'
+    compileTestJava.options.encoding = 'UTF-8'
+
     // you may put jars on which you depend on in ./libs
     // or you may define them like so..
     //compile "some.group:artifact:version:classifier"
